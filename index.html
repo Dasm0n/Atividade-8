@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Somar dois números</title>
+</head>
+<body>
+  <h1>Multiplicar  dois números</h1>
+  <input type="text" data-js="number1">
+  <input type="text" data-js="number2">
+  <button type="button">Mutiplicar</button>
+  <div data-js="result"></div>
+
+  <h1>Potencia</h1>
+  <input type="text" data-js="number1">
+  <input type="text" data-js="number2">
+  <button type="button">Potencia</button>
+  <div data-js="result"></div>
+
+ 
+
+  <script>
+    document.querySelector( 'button' )
+      .addEventListener( 'click', handleClick, false );
+    
+    function handleClick() {
+      var number1 = document.querySelector( '[data-js="number1"]').value;
+      var number2 = document.querySelector( '[data-js="number2"]').value;
+      
+      document.querySelector( '[data-js="result"]' ).innerHTML = sum( number1, number2 );
+    }
+    
+    function sum( number1, number2 ) {
+  var DECIMAL = 10;
+  return parseInt( number1, DECIMAL ) * parseInt( number2, DECIMAL );
+  document.getElementById("demo").innerHTML = Math.pow(number1, number2);
+
+  document.querySelector( 'button' )
+      .addEventListener( 'click', handleClick, false );
+    }
+  
+    
+    
+
+  
+  
+  
+  function handleClick2() {
+      var number3 = document.querySelector( '[data-js="number3"]').value;
+      var number4 = document.querySelector( '[data-js="number4"]').value;
+      
+      document.querySelector( '[data-js="result"]' ).innerHTML = pow( number3, number4 );
+    }
+    
+    function pow( number3, number4 ) {
+  
+  return  Math.pow(0, 1);
+  document.getElementById("demo2").innerHTML = Math.pow(number3, number4);
+
+}
+
+
+
+  </script>
+    
+
+
+</body>
+</html>
+
